@@ -1,17 +1,16 @@
 import React from "react";
 import { data } from "../data/data.js";
 
+import UnderConstruction from "../assets/under-construction-2891888.jpg";
+
 const Work = () => {
     // projects file
     const project = data;
     //setProject(data);
 
     return (
-        <div
-            name="work"
-            className="w-full md:h-screen text-gray-300 bg-[#0a192f]"
-        >
-            <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+        <div name="work" className="w-full text-gray-300 bg-[#0a192f]">
+            <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full ">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
                         Work
@@ -20,7 +19,9 @@ const Work = () => {
                 </div>
 
                 {/* container for projects */}
-                <div></div>
+                <div>
+                    <img src={UnderConstruction} alt="" />
+                </div>
             </div>
         </div>
     );
